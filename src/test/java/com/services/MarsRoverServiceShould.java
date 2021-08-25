@@ -25,13 +25,7 @@ public class MarsRoverServiceShould {
     }
 
     @Test
-    public void moveFromController(){
-        _marsRoverService.runMarsRover(_marsRover, _marsRoverCommandController);
-        verify(_marsRoverCommandController).runCommand(_marsRover);
-    }
-
-    @Test
-    public void turnFromController(){
+    public void runCommand(){
         _marsRoverService.runMarsRover(_marsRover, _marsRoverCommandController);
         verify(_marsRoverCommandController).runCommand(_marsRover);
     }

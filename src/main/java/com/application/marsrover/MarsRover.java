@@ -17,12 +17,24 @@ public class MarsRover {
         return _xCoordinate;
     }
 
+    public void setXCoordinate(int xCoordinate) {
+        _xCoordinate = xCoordinate;
+    }
+
     public int getYCoordinate() {
         return _yCoordinate;
     }
 
+    public void setYCoordinate(int yCoordinate) {
+        _yCoordinate = yCoordinate;
+    }
+
     public Direction getOrientation() {
         return _orientation;
+    }
+
+    public void setOrientation(Direction orientation) {
+        _orientation = orientation;
     }
 
     public void runCommand(MarsRoverService marsRoverService, MarsRoverCommandController marsRoverCommandController) {
